@@ -201,3 +201,7 @@ body {
     color: white;
     gap: 20px;
   }
+
+  a {
+    text-decoration: none;
+  }
