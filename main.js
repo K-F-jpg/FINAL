@@ -70,6 +70,8 @@ $(document).ready(function(){
 
     $('.a1').click(function() {
         alert("are you sure you want to take this? you cannot exit the test after starting.");
+        // $('.a1').attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        // $link.attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     })
 
     $('.restart').click(function (){
