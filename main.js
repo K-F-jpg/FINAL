@@ -34,18 +34,28 @@ $(document).ready(function(){
     $('.start').click(function () {
         $('.optionI').show();
         $('.optionII').show();
+        $('.restart').show();
         $('.optionI').insertBefore('.start');
         $('.optionII').insertAfter('.start');
+        $(".start").attr('src', 'MEDIA/20250429_164524.png');
         // $('.start').css('background-color', 'white', 'border', '3px solid blue');
     })
 
     $('.optionI').click(function() {
         $('.school').insertBefore('.optionI');
         $('.school').show();
+        $('.optionII').hide();
+    })
+
+    $('.optionII').click(function() {
+        $('.life').insertAfter('.optionII');
+        $('.life').show();
+        $('.optionI').hide();
     })
 
     $('.restart').click(function (){
-        $('.optionI, .optionII, .school').hide();
+        $('.optionI, .optionII, .school, .restart, .life').hide();
+        $(".start").attr('src', 'MEDIA/character_before.png');
     })
     
 })
