@@ -45,7 +45,7 @@ $(document).ready(function(){
         $('.school').insertBefore('.optionI');
         $('.school').show();
         $('.s1, .s2, .s3').show();
-        $('.optionII').hide();
+        $('.optionII, .life, .life_sub, .assignmentsI').hide();
     })
 
     $('.optionII').click(function() {
@@ -53,13 +53,13 @@ $(document).ready(function(){
         $('.life').show();
         $('.l1, .l2, .l3').show();
         $('.optionI').hide();
-        $('.school').hide()
+        $('.school, .assignmentsI').hide()
     })
 
     $('.l2').click(function() {
         $('.life_sub').insertAfter('.life');
         $('.life_sub').show();
-        $('.l1, .l3').hide();
+        $('.l1, .l3, .assignmentsI').hide();
     })
 
     $('.s1').click(function() {
