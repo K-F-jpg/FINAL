@@ -44,17 +44,36 @@ $(document).ready(function(){
     $('.optionI').click(function() {
         $('.school').insertBefore('.optionI');
         $('.school').show();
+        $('.s1, .s2, .s3').show();
         $('.optionII').hide();
     })
 
     $('.optionII').click(function() {
         $('.life').insertAfter('.optionII');
         $('.life').show();
+        $('.l1, .l2, .l3').show();
         $('.optionI').hide();
+        $('.school').hide()
+    })
+
+    $('.l2').click(function() {
+        $('.life_sub').insertAfter('.life');
+        $('.life_sub').show();
+        $('.l1, .l3').hide();
+    })
+
+    $('.s1').click(function() {
+        $('.assignmentsI').insertBefore('.school');
+        $('.assignmentsI').show();
+        $('.s2, .s3').hide();
+    })
+
+    $('.a1').click(function() {
+        alert("are you sure you want to take this? you cannot exit the test after starting.");
     })
 
     $('.restart').click(function (){
-        $('.optionI, .optionII, .school, .restart, .life').hide();
+        $('.optionI, .optionII, .school, .restart, .life, .life_sub, .assignmentsI').hide();
         $(".start").attr('src', 'MEDIA/character_before.png');
     })
     

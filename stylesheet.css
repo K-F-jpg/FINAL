@@ -7,6 +7,7 @@ body {
     align-items: center;
     overflow: hidden;
     border: 3px solid red;
+    background-image: url(MEDIA/the\ background\ ig.webp); background-position: center; background-size: 100%; background-repeat: no-repeat;
 } 
 .image {
     display: flex;
@@ -61,6 +62,7 @@ body {
     border-radius: 30%;
     /* background-color: purple; */
     color: white;
+    filter: drop-shadow(0 0 200px rgb(255 255 255))
 }
 .optionI{
     display: flex;
@@ -110,7 +112,51 @@ body {
     color: white;
     gap: 20px;
 }
+.life_sub {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+}
 
+.assignmentsI {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+}
+.assignmentsII {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+}
+.assignmentsIII {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+}
 /* .circle {
     display: grid;
     grid-template-areas: "layer";
