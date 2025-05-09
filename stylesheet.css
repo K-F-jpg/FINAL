@@ -7,7 +7,7 @@ body {
     align-items: center;
     overflow: hidden;
     /* border: 3px solid red; */
-    background-image: url(MEDIA/the\ background\ ig.webp); background-position: center; background-size: 100%; background-repeat: no-repeat;
+    background-image: url(MEDIA/img\ without\ bar.png); background-position: center; background-size: cover; background-repeat: no-repeat;
 } 
 .image {
     display: flex;
@@ -24,6 +24,39 @@ body {
     align-items: center;
     /* border: 3px solid blue; */
     gap: 20px;
+}
+.quadrants {
+    display: flex;
+    flex-direction: row;
+    width: 100vw; height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    gap: 100px;
+}
+.quad {
+    border: 3px solid red;
+    width: 50vw;
+    height: 100vh;
+    /* background-color: green; */
+}
+.taskbar_container {
+    display: flex;
+    /* background-image: url('MEDIA/taskbar\ only.png'); background-position: center; background-size: cover; background-repeat: no-repeat; */
+    /* border: 3px solid green; */
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: fixed;
+    bottom: 0px;
+}
+.art {
+    z-index: 2;
+    width: 100vw;
+    height: auto;
+    display: none;
+    position: fixed;
 }
 
 /* .test {
@@ -61,8 +94,10 @@ body {
     /* border: 3px solid black; */
     border-radius: 30%;
     /* background-color: purple; */
-    color: white;
-    filter: drop-shadow(0 0 200px rgb(255 255 255))
+    /* border: 3px solid red; */
+    filter: drop-shadow(0 0 200px rgb(255 255 255));
+    margin-top: -100px;
+    z-index: 1;
 }
 .optionI{
     display: flex;
@@ -76,6 +111,7 @@ body {
     border: 3px outset black;
     background-color: blue;
     color: white;
+    z-index: 1;
 }
 .optionII{
     display: flex;
@@ -88,6 +124,7 @@ body {
     border: 3px outset black;
     background-color: blue;
     color: white;
+    z-index: 1;
 }
 .school {
     display: flex;
@@ -99,6 +136,7 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
 }
 
 .life {
@@ -111,6 +149,7 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
 }
 .life_sub {
     display: flex;
@@ -122,6 +161,45 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
+}
+.life_sub2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+    z-index: 1;
+}
+.life_sub3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+    z-index: 1;
+}
+
+.texting_non_war_related_plans {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid black; */
+    color: white;
+    gap: 20px;
+    z-index: 1;
+    display: none;
 }
 
 .assignmentsI {
@@ -134,6 +212,7 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
 }
 .assignmentsII {
     display: flex;
@@ -145,6 +224,7 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
 }
 .assignmentsIII {
     display: flex;
@@ -156,38 +236,16 @@ body {
     /* border: 3px solid black; */
     color: white;
     gap: 20px;
+    z-index: 1;
 }
-/* .circle {
-    display: grid;
-    grid-template-areas: "layer";
-    place-items: end;
-    background: #185adb;
-    border-radius: 50%;
-  
-    --radius: 25vmin;
-    width: calc(2 * var(--radius));
-    height: calc(2 * var(--radius));
-  }
-  
-  .stat {
-    grid-area: layer;
-    width: 10vmin;
-    height: 10vmin;
-    border-radius: 50%;
-  
-    display: grid;
-    place-items: center;
-  
-    background: #ffc947;
-    color: #185adb;
-    font-weight: bold;
-    font-size: 3vmin;
-  
-    --d: calc(var(--i) / var(--total));
-    --r-offset: -0.25turn;
-    --r-amount: 1turn;
-    --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-  } */
+
+.homework {
+    z-index: 2;
+    height: 100vw;
+    width: auto;
+    display: none;
+    position: fixed;
+}
 
   .restart {
     display: flex;
@@ -200,8 +258,13 @@ body {
     background: red;
     color: white;
     gap: 20px;
+    z-index: 3;
   }
 
   a {
     text-decoration: none;
+  }
+
+  .button_deco {
+    background: blue; border: 3px outset black; border-radius: 30px; width: 100px; text-align: center
   }
